@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right, black, #696969, gray, #C0C0C0, white);
+}
+
+h1 {
+    text-transform: uppercase;
+    text-align: center;
+    color:black;
+    text-shadow: 2px 2px slategray;
+}
+
+div.container {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    width: 80%;
+    height: 50%;
+    background-color: mintcream;
+    margin: 3em auto;
+}
+
+.flex-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+}
+
+.add-movie {
+    margin-bottom: 1em;
+}
+
+.add-button, .show-movies {
+   margin-left: 0.5em;
+   width: 4em;
+   height: 2em;
+   font-size: 1.5em;
+   font-weight: 900;
+   background-image: linear-gradient(to right, turquoise, aqua, aquamarine);
+   outline: none;
+   cursor: pointer;
+   opacity: 70%;
+   border-radius: 3px;
+   text-transform: uppercase;
+   text-shadow: 1px 1px 1px gainsboro;
+   box-shadow: 2px 2px 4px lightgray;
+}
+
+.add-button:hover {
+    opacity: 100%;
+}
+
+.add-button:active {
+    box-shadow: 0 3px lightgray;
+    transform: translateY(4px);
+  }
+
+.add-input {
+    outline: none;
+    font-size: 1.5em;
+    width: 10em;
+    height: 2em;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px gainsboro;
+    box-shadow: 2px 2px 4px lightgray;
+    padding-left: 0.2em;
+}
+
+.show-movies {
+    width: 6em;
+    margin-right: 1em;
+}
+
+.movie-list {
+    display: none;
+    list-style-type: none;
+    font-size: 1.5em;
+    margin: 1em;
+    border-radius: 5px;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+.movie-list li {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 2em;
+    border-spacing: 0px;
+    opacity: 0;
+    transition: opacity 2s linear 1s;
+    text-shadow: 1px 1px 1px black;
+    padding-left: 1em;
+}
+
+li.show {
+   opacity: 100% !important;
+}
+
+.error {
+   border: 2px solid red;
+   box-shadow: none;
+}
+
+span#error{
+    display: none;
+    color: red;
+    font-weight: bold;
+    padding-top: 0.2em;
+    transition:font-style 0.8s;
+}
+
+span#error:hover {
+  font-style: italic;
+  transition:width 0.5s;
+}
+
+.delete-button {
+    background-image: linear-gradient(to right, #DC143C, red, tomato);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color:white;
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.delete-button:hover {
+    background: crimson !important;
+}
